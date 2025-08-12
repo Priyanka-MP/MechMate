@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from application.routes import health, auth, assistance
-
+- from application.routes import health, auth, assistance
++ from .routes import health, auth, assistance
 app = FastAPI(title="MechMate API", version="1.0")
 
 # Include routes
