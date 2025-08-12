@@ -1,12 +1,14 @@
+# Application/routes/auth.py
+
 from fastapi import APIRouter
-from Application.models.user import SignupRequest, LoginRequest
+from application.models.user import SignupRequest, LoginRequest
 
 router = APIRouter()
 
 @router.post("/signup")
-def signup(user: SignupRequest):
-    return {"message": "User registered successfully", "user": user}
+async def signup(user: SignupRequest):
+    return {"message": f"User {user.email} signed up successfully."}
 
 @router.post("/login")
-def login(credentials: LoginRequest):
-    return {"message": "Login successful", "user": credentials.email}
+async def login(user: LoginRequest):
+    return {"message": f"User {user.email} logged in successfully."}
