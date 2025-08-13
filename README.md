@@ -1,10 +1,6 @@
 # MechMate
 Road assistance application
 
-### ✅ Day 1 Progress:
-- Created FastAPI app structure
-- Added `/health` check endpoint
-- Tested with Uvicorn locally
-- Installed dependencies: FastAPI, Uvicorn
+https://www.behance.net/gallery/223655501/MechMate-Roadside-Assistance-App-UIUX-Case-Study
 
 
